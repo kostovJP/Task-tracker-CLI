@@ -6,8 +6,8 @@ import (
 
 	"strconv"
 
-	"github.com/kostovJP/Task-tracker-CLI/handlers"
-	"github.com/kostovJP/Task-tracker-CLI/utils"
+	"github.com/kostovJP/taskcli/handlers"
+	"github.com/kostovJP/taskcli/utils"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/kostovJP/Task-tracker-CLI
+module github.com/kostovJP/taskcli
 
 go 1.25.5
 

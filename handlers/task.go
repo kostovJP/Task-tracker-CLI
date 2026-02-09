@@ -3,9 +3,9 @@ package handlers
 import (
 	"errors"
 
-	"github.com/kostovJP/Task-tracker-CLI/fileman"
-	"github.com/kostovJP/Task-tracker-CLI/tasks"
-	"github.com/kostovJP/Task-tracker-CLI/utils"
+	"github.com/kostovJP/taskcli/fileman"
+	"github.com/kostovJP/taskcli/tasks"
+	"github.com/kostovJP/taskcli/utils"
 )
 
 func RetrieveTaskById(tasks []tasks.Task, taskId int64) (*tasks.Task, error) {

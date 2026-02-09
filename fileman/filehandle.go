@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/kostovJP/Task-tracker-CLI/tasks"
+	"github.com/kostovJP/taskcli/tasks"
 )
 
 // we will store an array of tasks.

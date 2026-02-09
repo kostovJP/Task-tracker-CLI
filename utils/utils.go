@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kostovJP/Task-tracker-CLI/tasks"
+	"github.com/kostovJP/taskcli/tasks"
 )
 
 func CheckFileExists(path string) bool {
@@ -47,7 +47,7 @@ func ShowHelp() {
 	_______________________________________________________
 	Listing tasks by status
 	> task-cli list done
-    > task-cli list todo
-    > task-cli list in-progress
+    	> task-cli list todo
+    	> task-cli list in-progress
 	_______________________________________________________`)
 }
