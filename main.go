@@ -118,7 +118,7 @@ func main() {
 			fileStatus = args[1]
 		}
 
-		if (fileStatus != "in-progress") && (fileStatus != "done") && (fileStatus != "") {
+		if (fileStatus != "in-progress") && (fileStatus != "done") && (fileStatus != "") && (fileStatus != "todo") {
 			fmt.Println("No such status as: ", fileStatus)
 			fmt.Println(`Available status are: "in-progress", "done"`)
 			return
