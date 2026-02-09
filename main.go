@@ -17,7 +17,7 @@ func main() {
 	if len(os.Args) < 2 || len(os.Args) > 4 {
 		panic("incorrect number of arguments (expected min 2 max 4)")
 	}
-	
+
 	args := os.Args[1:]
 	command := args[0]
 	filePath := "tasks.json"
@@ -76,7 +76,8 @@ func main() {
 			fmt.Println(err)
 			panic("unable to change file status to in-progress")
 		}
-
+		
+		
 	case "mark-done":
 		newStatus := "done"
 		taskId, err := strconv.ParseInt(args[1], 10, 64)
@@ -96,8 +97,9 @@ func main() {
 		taskList, err := handlers.GetAllTasks(filePath)
 
 		if err != nil {
-			fmt.Println(err)
-			panic("unable to display tasks...")
+			fmt.Println("No tasks.json file found in current directory...")
+			fmt.Println(`Create one by using: $taskcli add "task description"`)
+			return 
 		}
 
 		utils.DisplayTasks(taskList)
